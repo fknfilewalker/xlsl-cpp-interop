@@ -27,7 +27,7 @@ The only change needed for this to work in HLSL/GLSL is to replace the `in/out/i
 
 > [glm](https://glm.g-truc.net/) is required for this
 
-> Not every built-in function of HLSL/GLSL is yet covered but it should be straight forward to extend
+> Not every built-in function of HLSL/GLSL is yet covered but it should be straightforward to extend
 ```c++
 /* HLSL/GLSL */
 void addOne(inout float f) { f += 1; }
