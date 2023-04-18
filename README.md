@@ -1,10 +1,10 @@
 # xlsl-cpp-interop
-Code that makes the exchange between HLSL/GLSL and C++ easier
+Code that makes the exchange of code between HLSL/GLSL and C++ easier
 
 ## Share Structs
-Before including the file below in GLSL/HLSL either define `GLSL` or `HLSL`\
-For C/C++ usage nothing needs to be defined\
-For C++ with [glm](https://glm.g-truc.net/) define `GLM`
+Before including the file below in your GLSL/HLSL code either define `GLSL` or `HLSL`\
+Before including the file below in your C++ code using [glm](https://glm.g-truc.net/) define `GLM`\
+For pure C/C++ usage nothing needs to be defined
 ```c++
 // example of HLSL/C++ interopt
 #ifndef __cplusplus
@@ -23,7 +23,7 @@ STRUCT (
 ```
 
 ## Share Code
-The only change needed for this to work in HLSL/GLSL is to replace the `in/out/inout` qualifiers with `IREF/OREF/REF`. 
+The only change needed for this to work with your existing HLSL/GLSL code is to replace the `in/out/inout` qualifiers with `IREF/OREF/REF`. 
 
 > [glm](https://glm.g-truc.net/) is required for this
 
