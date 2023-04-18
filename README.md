@@ -1,5 +1,5 @@
 # xlsl-cpp-interop
-Code that makes the exchange of code between HLSL/GLSL and C++ easier
+Helper for making the exchange of code between HLSL/GLSL and C++ easier
 
 ## Share Structs
 Before including the file below in your GLSL/HLSL code either define `GLSL` or `HLSL`\
