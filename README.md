@@ -2,7 +2,9 @@
 Code that makes the exchange between HLSL/GLSL and C++ easier
 
 ## Share Structs
-Before including the file below define GLSL/HLSL for usage in `GLSL` or `HLSL` and define nothing or `GLM` for usage in C/C++ optional with [glm](https://glm.g-truc.net/)
+Before including the file below in GLSL/HLSL either define `GLSL` or `HLSL`\
+For C/C++ usage nothing needs to be defined\
+For C++ with [glm](https://glm.g-truc.net/) define `GLM`
 ```c++
 // example of HLSL/C++ interopt
 #ifndef __cplusplus
