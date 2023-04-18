@@ -10,8 +10,7 @@ For C++ with [glm](https://glm.g-truc.net/) define `GLM`
 #ifndef __cplusplus
 #define HLSL
 #endif
-```
-```c++
+
 #include "xlsl_type_conv_def.h"
 STRUCT (
     MAT4    (viewMat)
@@ -20,7 +19,7 @@ STRUCT (
     FLOAT   (ditherStrength)
 ,GlobalUbo)
 #include "xlsl_type_conv_undef.h"
-// GlobalUbo can now be used in C++ and HLSL/GLSL by including this code
+// GlobalUbo can now be used in C++ and HLSL/GLSL by including the file including this code
 ```
 
 ## Share Code
