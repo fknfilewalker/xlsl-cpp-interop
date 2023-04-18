@@ -37,7 +37,7 @@ void addOne(REF(float) f) { f += 1; }
 ```
 ```c++
 /* C++ */
-#include "hlsl_adapter.h" // advice: rather not include this globaly
+#include "hlsl_adapter.h" // advice: rather not include this globally
 #include "your.hlsl"
 
 int main(int argc, char* argv[]) {
