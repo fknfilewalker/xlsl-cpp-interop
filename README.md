@@ -2,7 +2,7 @@
 Code that makes the exchange between HLSL/GLSL and C++ easier
 
 ## Share Structs
-Before including the file below define GLSL/HLSL for usage in `GLSL` or `HLSL` and define nothing or `GLM` for usage in C/C++ optional with glm
+Before including the file below define GLSL/HLSL for usage in `GLSL` or `HLSL` and define nothing or `GLM` for usage in C/C++ optional with [glm](https://glm.g-truc.net/)
 ```c++
 // example of HLSL/C++ interopt
 #ifndef __cplusplus
@@ -24,7 +24,9 @@ STRUCT (
 ## Share Code
 The only change needed for this to work in HLSL/GLSL is to replace the `in/out/inout` qualifiers with `IREF/OREF/REF`. 
 
-> [GLM](https://glm.g-truc.net/) is required for this.
+> [glm](https://glm.g-truc.net/) is required for this
+
+> Not every built-in function of HLSL/GLSL is yet covered but it should be straight forward to extend
 ```c++
 /* HLSL/GLSL */
 
