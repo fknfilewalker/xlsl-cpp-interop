@@ -19,7 +19,7 @@ STRUCT (
     FLOAT   (ditherStrength)
 ,GlobalUbo)
 #include "xlsl_type_conv_undef.h"
-// GlobalUbo can now be used in C++ and HLSL/GLSL by including the file including this code
+// GlobalUbo can now be used in C++ and HLSL by including the file including this code
 ```
 
 ## Share Code
