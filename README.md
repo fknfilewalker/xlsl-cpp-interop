@@ -30,7 +30,6 @@ The only change needed for this to work in HLSL/GLSL is to replace the `in/out/i
 > Not every built-in function of HLSL/GLSL is yet covered but it should be straight forward to extend
 ```c++
 /* HLSL/GLSL */
-
 void addOne(inout float f) { f += 1; }
 // turns into 
 #include "c_adapter.h"
@@ -41,8 +40,11 @@ void addOne(REF(float) f) { f += 1; }
 #include "hlsl_adapter.h" // advice: rather not include this globaly
 #include "your.hlsl"
 
-float f;
-addOne(f);
+int main(int argc, char* argv[]) {
+  float f;
+  addOne(f);
+  return 0;
+}
 ```
 
 > No excuses anymore, go and write some unit tests for your GPU code. 
